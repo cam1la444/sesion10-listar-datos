@@ -253,3 +253,44 @@ tk.Spinbox(
     padx=10,
     pady=8
 )
+
+#Genero
+tk.label(
+    formulario,
+    text = "Genero:"
+).grid(
+    row = 6,
+    column = 0,
+    padx = 10,
+    pady = 8,
+    sticky = "e"
+)
+frame_genero = tk.Frame(
+    formulario
+)
+frame_genero.grid(
+    row = 6,
+    column = 1,
+    padx = 10,
+    pady = 8,
+    sticky = "w"
+)
+tk.Radiobutton(
+    frame_genero,
+    text = "Masculino",
+    variable = genero,
+    value = "Masculino"
+).pack(
+    side = "left"
+)
+
+tk.Radiobutton(
+    frame_genero,
+    text = "Femenino",
+    variable = genero,
+    vaalue = "Femenino"
+).pack(
+    side = "left"
+)
+
+#Carrera
