@@ -294,3 +294,8 @@ tk.Radiobutton(
 )
 
 #Carrera
+
+ventana_principal = tk.Tk()
+ventana_principal.title("Registro de estudiantes")
+
+ventana_principal.mainloop()
